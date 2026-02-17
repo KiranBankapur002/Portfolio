@@ -1526,11 +1526,32 @@ body.dark .skill-icon {
   }
 
   .projects-carousel {
+    position: relative;
     grid-template-columns: 1fr;
   }
 
   .slider-btn {
-    display: none;
+    display: grid;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    width: 38px;
+    height: 38px;
+    background: color-mix(in srgb, var(--surface) 88%, transparent);
+    backdrop-filter: blur(4px);
+  }
+
+  .slider-btn.slider-btn--prev {
+    left: 0.45rem;
+  }
+
+  .slider-btn.slider-btn--next {
+    right: 0.45rem;
+  }
+
+  .slider-btn:hover {
+    transform: translateY(-50%) scale(1.03);
   }
 
   h1 {
