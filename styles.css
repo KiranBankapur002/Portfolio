@@ -646,7 +646,7 @@ body.dark .button.ghost {
   border-color: #dfe6f3;
 }
 
-body.dark .resume-open,
+body.dark .resume-open:not(.nav-inline-btn),
 body.dark .filter-btn {
   background: #ffffff;
   color: #0f172a;
